@@ -20,7 +20,7 @@ with codecs.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 setuptools.setup(
     name='rapidpro-for-rapidsms',
 
-    version='1.0.0',
+    version='1.0.1',
 
     description='A RapidPro backend for RapidSMS.',
     long_description=long_description,
