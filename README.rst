@@ -1,7 +1,8 @@
 rapidpro-for-rapidsms
 =====================
 
-This is the `RapidPro`_ backend for `RapidSMS`_.  This component uses the official `rapidpro-python`_ to communicate with RapidPro.
+This is the `RapidPro`_ backend for `RapidSMS`_.  It has been created for `UNICEF`_ to facilitate transition of legacy applications designed for `RapidSMS`_ and the `Django`_ web framework to the new `RapidPro`_ platform.
+This component uses the official `rapidpro-python`_ client library to communicate with RapidPro.
 
 Features
 --------
@@ -82,4 +83,6 @@ Development by Tomasz J. Kotarba of `SYSTEM7 <http://system7.IT>`_.
 .. _RapidSMS: http://www.rapidsms.org/
 .. _RapidPro: http://www.rapidpro.io/
 .. _rapidpro-python: http://pypi.python.org/pypi/rapidpro-python
+.. _UNICEF: http://www.unicef.org/
+.. _Django: https://www.djangoproject.com/
 .. _LICENSE.TXT: http://github.com/system7ltd/rapidpro-for-rapidsms/blob/master/LICENSE.txt
