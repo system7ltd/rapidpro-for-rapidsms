@@ -65,7 +65,7 @@ class RapidProSendTest(CreateDataMixin, TestCase):
         """
         backend = RapidProBackend(None, 'rapidpro-backend', **self.config)
         with patch(
-                'temba_client.client.TembaClient.__init__',
+                'temba_client.v1.TembaClient.__init__',
                 Mock(return_value=None)
         ) as mock_temba_constructor:
             backend._prepare_rapidpro_client()
@@ -116,7 +116,7 @@ class RapidProSendTest(CreateDataMixin, TestCase):
             {}
         )
         with patch(
-                'temba_client.client.TembaClient.create_broadcast'
+                'temba_client.v1.TembaClient.create_broadcast'
         ) as mock_create_bcast:
             backend.send(
                 message.id,

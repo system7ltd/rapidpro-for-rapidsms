@@ -15,7 +15,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 
 
 install_requires = [
-    'rapidpro-python>=1.0,<=2.1.5',
+    'rapidpro-python>=2.1.6',
     'rapidsms>=0.18.0',
     'django>=1.7,<1.9'  # rapidsms incompatible with 1.9 at the time
 ]
@@ -33,7 +33,7 @@ with codecs.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 setuptools.setup(
     name='rapidpro-for-rapidsms',
 
-    version='1.0.2',
+    version='1.0.3',
 
     description='A RapidPro backend for RapidSMS.',
     long_description=long_description,

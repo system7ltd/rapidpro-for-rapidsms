@@ -1,6 +1,6 @@
 import logging
 
-from temba_client.client import TembaClient
+from temba_client.v1 import TembaClient
 
 from rapidsms.backends.base import BackendBase
 

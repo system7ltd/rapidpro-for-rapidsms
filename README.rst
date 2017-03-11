@@ -19,7 +19,7 @@ Requirements
 * Python 2.7+ or Python 3.3+
 * Django >=1.7,<=1.9
 * RapidSMS 0.18.0+
-* rapidpro-python >=1.0,<=2.1.5
+* rapidpro-python >=2.1.6
 
 Installation
 ------------
