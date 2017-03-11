@@ -17,9 +17,9 @@ Requirements
 ------------
 
 * Python 2.7+ or Python 3.3+
-* Django 1.7+
+* Django >=1.7,<=1.9
 * RapidSMS 0.18.0+
-* rapidpro-python 1.0+
+* rapidpro-python >=1.0,<=2.1.5
 
 Installation
 ------------
@@ -28,7 +28,7 @@ The rapidpro-for-rapidsms backend supports Python >= 2.7 and Django >= 1.7.  All
 
 To install from PyPi::
 
-    pip install rapidpro-for-rapidsms
+    $ pip install rapidpro-for-rapidsms
 
 Configuration
 -------------
@@ -71,6 +71,17 @@ LICENSE
 -------
 
 The rapidpro-for-rapidsms backend is released under the BSD License. See the  `LICENSE.TXT`_ file for more details.
+
+Development
+-----------
+
+To install::
+
+    $ pip install -e .[development]
+
+To run tests::
+
+    $ python setup.py test
 
 Contributing
 ------------

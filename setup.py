@@ -13,6 +13,19 @@ __email__ = 'tomasz@kotarba.net'
 
 here = os.path.abspath(os.path.dirname(__file__))
 
+
+install_requires = [
+    'rapidpro-python>=1.0,<=2.1.5',
+    'rapidsms>=0.18.0',
+    'django>=1.7,<1.9'  # rapidsms incompatible with 1.9 at the time
+]
+
+
+tests_require = [
+    'mock',
+]
+
+
 # Get the long description from the README.rst file
 with codecs.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
@@ -67,15 +80,11 @@ setuptools.setup(
     # packages=setuptools.find_packages(exclude=['tests']),
     packages=setuptools.find_packages(),
 
-    install_requires=[
-        'rapidpro-python>=1.0',
-        'rapidsms>=0.18.0',
-        'django>=1.7,<1.9'  # rapidsms is currently incompatible with 1.9
-    ],
+    install_requires=install_requires,
 
-    tests_require=[
-        'mock',
-    ],
+    tests_require=tests_require,
 
     test_suite='run_tests.main',
+
+    extras_require={'development': tests_require},
 )
